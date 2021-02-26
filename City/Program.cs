@@ -27,16 +27,46 @@ namespace City
 
         
     }
+
+    public class Street
+    {
+        private string streetName;
+        public Street(string streetName)
+        {
+            this.streetName = streetName;
+        }
+
+        override
+        public string ToString()
+        {
+            return "The street name is: " + this.streetName;
+        }
+    }    
    
+    public class Park
+    {
+        private string parkName;
+        public Park(string parkName)
+        {
+            this.parkName = parkName;
+        }
+
+        override
+       public string ToString()
+        {
+            return "The park is called: " + this.parkName;
+        }
+
+    }
     class Program
     {
         static void Main(string[] args)
         {
             Cars c = new Cars("BWM", 123);
-
-
-            Console.WriteLine("Hello World!");
             Console.WriteLine(c);
+
+            Street s1 = new Street("Bulevart");
+            Console.WriteLine(s1);
 
         }
     }
