@@ -36,6 +36,10 @@ namespace City
             this.streetName = streetName;
         }
 
+        public string getStreetName()
+        {
+            return this.streetName;
+        }
         override
         public string ToString()
         {
@@ -58,6 +62,23 @@ namespace City
         }
 
     }
+
+    public class Building
+    {
+        private string adress;
+        private Street s;
+        
+        public Building(string adress)
+        {
+            this.adress = adress;
+        }
+
+        override
+      public string ToString()
+        {
+            return "The house adress is " + this.adress;
+        }
+    }
     class Program
     {
         static void Main(string[] args)
@@ -67,6 +88,12 @@ namespace City
 
             Street s1 = new Street("Bulevart");
             Console.WriteLine(s1);
+
+            Park p1 = new Park("1 Decembrie");
+            Console.WriteLine(p1);
+
+            Building b1 = new Building("Str. Food");
+            Console.WriteLine(b1);
 
         }
     }
