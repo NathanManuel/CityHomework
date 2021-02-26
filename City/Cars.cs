@@ -7,12 +7,12 @@ namespace City
     public class Cars
     {
         private string carName = null;
-        private int carNumber;
+        private string carNumber;
        
 
 
 
-        public Cars(string carName, int carNumber)
+        public Cars(string carName, string carNumber)
         {
             this.carName = carName;
             this.carNumber = carNumber;

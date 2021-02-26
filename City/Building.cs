@@ -6,11 +6,11 @@ namespace City
 {
     public class Building
     {
-        private string adress;
+        private string buildingType;
         private Street s;
-        public Building(string adress, Street s)
+        public Building(string buildingType, Street s)
         {
-            this.adress = adress;
+            this.buildingType = buildingType;
             this.s = s;
         }
 
@@ -19,7 +19,7 @@ namespace City
         override
       public string ToString()
         {
-            return "The house adress is " + this.adress + " and the street name is "+ this.s.getStreet(); 
+            return "The building is a " + this.buildingType + " and the street name is "+ this.s.getStreet(); 
         }
     }
 }
