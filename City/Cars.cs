@@ -8,8 +8,7 @@ namespace City
     {
         private string carName = null;
         private int carNumber;
-        private string v1;
-        private int v2;
+       
 
 
 

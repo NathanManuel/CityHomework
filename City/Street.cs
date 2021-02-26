@@ -12,7 +12,7 @@ namespace City
             this.streetName = streetName;
         }
 
-        public string getStreetName()
+       public string getStreet()
         {
             return this.streetName;
         }

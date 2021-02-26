@@ -15,7 +15,7 @@ namespace City
             Park p1 = new Park("1 Decembrie");
             Console.WriteLine(p1);
 
-            Building b1 = new Building("Str. Food");
+            Building b1 = new Building("Str. Food", s1);
             Console.WriteLine(b1);
 
         }
